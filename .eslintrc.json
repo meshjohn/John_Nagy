@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-var": "error", // Disallows the use of `var`, promoting `let` or `const`
+    "prefer-const": "off" // Turns off the rule that suggests using `const` if a variable isn't reassigned
+  }
 }
