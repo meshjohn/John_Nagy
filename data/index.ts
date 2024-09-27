@@ -72,11 +72,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: " Airbnb Clone",
-    des: "Airbnb clone with booking, guest/room selection, and property listings. Includes favorites page and full customization.",
-    img: "/Screenshot_25-9-2024_6394_airbnb-orpin-rho.vercel.app.jpeg",
-    iconLists: ["/next.svg", "/tail.svg", "/th.png", "th (3).png", "/ts.svg"],
-    link: "https://airbnb-orpin-rho.vercel.app",
+    title: "Yoom - Video Conferencing App",
+    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://yoom-smoky.vercel.app/",
   },
   {
     id: 2,

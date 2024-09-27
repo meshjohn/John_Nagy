@@ -20,14 +20,14 @@ const RecentProjects = () => {
             key={project.id}
           >
             <NoSSR title={project.link} href={project.link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[90vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[90vw] overflow-hidden sm:h-[40vh] h-[20vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
                 <img
                   src={project.img}
                   alt={project.title}
-                  className={`z-10 absolute bottom-10 lg:bottom-12  lg:h-[250px] lg:w-[500px]`}
+                  className={`z-10 absolute bottom-2 ${project.id !== 1  && "bottom-10 lg:bottom-12  lg:h-[250px] lg:w-[500px]"}`}
                 />
               </div>
               <h1 className="font-boldlg:text-2xl md:text-xl text-base line-clamp-1">
