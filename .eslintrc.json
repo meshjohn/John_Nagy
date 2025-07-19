@@ -5,6 +5,7 @@
   },
   "rules": {
     "no-var": "error", // Disallows the use of `var`, promoting `let` or `const`
-    "prefer-const": "off" // Turns off the rule that suggests using `const` if a variable isn't reassigned
+    "prefer-const": "off", // Turns off the rule that suggests using `const` if a variable isn't reassigned
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
