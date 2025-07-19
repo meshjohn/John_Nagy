@@ -4,7 +4,6 @@ import { useState } from "react";
 import { projects } from "@/data";
 import { FaLocationArrow } from "react-icons/fa";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
 const RecentProjects = () => {
   const NoSSR = dynamic(
@@ -60,12 +59,11 @@ const ProjectCard = ({ project, NoSSR }: any) => (
     <NoSSR title={project.link} href={project.link}>
       <div className="relative flex items-center justify-center sm:w-[570px] w-[90vw] overflow-hidden sm:h-[40vh] h-[20vh] mb-10">
         <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-          <Image src="/bg.png" alt="bg-img" fill />
+          <img src="/bg.png" alt="bg-img" />
         </div>
-        <Image
+        <img
           src={project.img}
           alt={project.title}
-          fill
           className={`z-10 absolute bottom-2 ${
             project.id !== 1 &&
             "bottom-10 lg:bottom-12 lg:h-[250px] lg:w-[500px]"
@@ -86,7 +84,7 @@ const ProjectCard = ({ project, NoSSR }: any) => (
               style={{ transform: `translateX(-${5 * index * 2}px)` }}
               key={icon}
             >
-              <Image src={icon} fill alt={icon} className="p-2" />
+              <img src={icon} alt={icon} className="p-2" />
             </div>
           ))}
         </div>
