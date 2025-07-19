@@ -1,17 +1,7 @@
 import { FaLocationArrow } from "react-icons/fa";
-import dynamic from "next/dynamic";
-
-const MagicButton = dynamic(() => import("./ui/MagicButton"), { ssr: false });
-
-const Spotlight = dynamic(
-  () => import("./ui/Spotlight").then((mod) => mod.Spotlight),
-  { ssr: false }
-);
-
-const TextGenerateEffect = dynamic(
-  () => import("./ui/TextGenerate").then((mod) => mod.TextGenerateEffect),
-  { ssr: false }
-);
+import MagicButton from "./ui/MagicButton";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerate";
 
 const Hero = () => {
   return (
